@@ -8,7 +8,7 @@ tsconfig
     },
 ```
 
-## css相关
+## css相关(默认使用scss，配置简单一些)
 ### 样式模块化，ts配置
 1. style.d.ts
 ```
@@ -38,6 +38,6 @@ tsconfig>compilerOption>
 
 3. scss识别（less：https://juejin.cn/post/6844904181942222862）
 ```
-
+npm i node-sass sass-loader --save-dev
 
 ```
