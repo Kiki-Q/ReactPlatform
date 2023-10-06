@@ -41,3 +41,17 @@ tsconfig>compilerOption>
 npm i node-sass sass-loader --save-dev
 
 ```
+
+## antd
+### 引入
+```
+npm install antd --save
+```
+
+
+## json
+```
+npm install --save-dev eslint-plugin-json
+
+
+```

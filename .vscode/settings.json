@@ -26,5 +26,6 @@
 
   // 模块化提示功能
   "typescript.tsdk": "node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "prettier.endOfLine": "auto"
 }

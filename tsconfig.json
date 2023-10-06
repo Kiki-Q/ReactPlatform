@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./", // 路径配置
+    "baseUrl": ".", // 路径配置
     "paths": {
       "@": ["src"],
       "@/*": ["src/*"]
@@ -20,6 +20,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "typeRoots": ["node_modules/@types"],
     "plugins": [{ "name": "typescript-plugin-css-modules" }]
   },
   "include": ["src", "src/types"]
