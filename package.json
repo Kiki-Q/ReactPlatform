@@ -30,10 +30,10 @@
     "eject": "react-scripts eject",
     "lint-staged": "lint-staged",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
-    "lint:style": "stylelint \"**/*.css\"",
+    "lint:style": "stylelint \"**/*.scss\"",
     "lint:prettier": "prettier -c --write \"src/**/*\"",
     "lint:js:fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
-    "lint:style:fix": "stylelint \"**/*.css\" --fix"
+    "lint:style:fix": "stylelint \"**/*.scss\" --fix"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -87,8 +87,11 @@
     "prettier": "^3.0.3",
     "sass-loader": "^13.3.2",
     "stylelint": "^15.10.3",
+    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^11.0.0",
+    "stylelint-prettier": "^4.0.2",
     "typescript-plugin-css-modules": "^5.0.1"
   }
 }

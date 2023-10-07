@@ -13,4 +13,4 @@
 
 ## [Unexpected any. Specify a different type.eslint](https://blog.csdn.net/a1056244734/article/details/116483428)
 
-## 
+## [Stylelint: Could not find "stylelint-prettier/recommended". Do you need the "configBasedir" or "--config-basedir" option?]()

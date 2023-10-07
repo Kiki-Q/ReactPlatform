@@ -118,12 +118,13 @@ vscode>setting>
 重启
 
 ```
-npm i stylelint stylelint-config-standard -D
+npm install -D stylelint stylelint-config-standard stylelint-config-rational-order stylelint-prettier stylelint-config-prettier
+<!-- 一些rules：https://juejin.cn/post/6878121082188988430 -->
 
 .stylelintrc.js
 
-npm i stylelint-prettier -D
-npm install -D stylelint-config-rational-order
+npm i stylelint-config-standard-scss -D
+<!-- 对less配置：https://juejin.cn/post/7101596844181962788#heading-33 -->
 ```
 
 ```

@@ -8,6 +8,8 @@ tsconfig
     },
 ```
 
+## 修改默认端口："start": "set PORT=9527 && react-scripts start",
+
 ## css相关(默认使用scss，配置简单一些)
 ### 样式模块化，ts配置
 1. style.d.ts
@@ -46,12 +48,4 @@ npm i node-sass sass-loader --save-dev
 ### 引入
 ```
 npm install antd --save
-```
-
-
-## json
-```
-npm install --save-dev eslint-plugin-json
-
-
 ```
