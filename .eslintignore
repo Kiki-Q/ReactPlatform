@@ -1,6 +1,9 @@
 /node_modules
 /public
 
+.eslintrc.js
+config-overrides.js
+
 *.sh
 *.md
 *.woff
@@ -11,7 +14,7 @@ dist
 /docs
 .husky
 /bin
-# .eslintrc.js
+
 prettier.js
 /src/mock/*
 
