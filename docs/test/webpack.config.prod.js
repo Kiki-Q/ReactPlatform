@@ -1,3 +1,4 @@
+const path = require('path')
 const webpack = require('webpack');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -12,16 +13,19 @@ module.exports = {
     entry: {
         "app": ["./src/app.tsx"],
         "main": ["./main.tsx"]
+        // path.join(__dirname,"../src/index.tsx"),//入口文件
     },
     output: {
-        filename: "[name].js",
-        path: __dirname + "/dist"
+        filename:"static/js/[name].js",//每个输出的js文件的名称
+        path:path.join(__dirname,"../dist"),//打包结果输出的路径
+        clean:true,//webapck5内置的，webpack4中需要配置clean-webpack-plugin来删除之前的dist
+        publicPath:"/"//打包后文件的公共前缀路径
     },
 
     devtool: "source-map",
 
     resolve: {
-        extensions: [".ts", ".tsx", ".js", ".json"]
+        extensions: [".ts", ".tsx", ".js", ".json",".css", ".less", ".scss",".png"]
     },
 
     module: {
@@ -32,7 +36,20 @@ module.exports = {
                     loader: "html-loader"
                 }]
             },
-            { test: /\.tsx?$/, loader: "ts-loader" },
+            // { test: /\.tsx?$/, loader: "ts-loader" },
+            {
+                test:/.(ts|tsx)$/,//匹配ts、tsx文件
+                use:{
+                    loader:"babel-loader",
+                    options:{
+                        //预设执行顺序由右往左，所以这里是先处理ts再处理jsx
+                        presets:[
+                            "@babel/preset-react",
+                            "@babel/preset-typescript"
+                        ]
+                    }
+                }
+            },
             {
                 test: /\.(sa|sc|c)ss$/,
                 use: [{
@@ -53,13 +70,27 @@ module.exports = {
                 }]
             },
             {
-                test: /\.(png|jpg|jpeg|gif)$/,
+                test: /\.(png|jpg|jpeg|gif|svg)$/,
                 use: [{
                     loader: "url-loader",
                     options: {
-                        name: "[name]-[hash:5].min.[ext]"
+                        name: "[name]-[hash:5].min.[ext]", //输出文件的名字
+						limit: 8192,
+						outputPath: 'image', //配置图片路径
                     }
                 }]
+            },
+            {
+                test:/\.ico$/,
+                use:[
+                    {
+                        loader:'file-loader',  //npm i file-loader -D
+                        options:{
+                            name:'[name].[ext]',
+                            outputPath:'assets/icons'
+                        }
+                    }
+                ]
             }
         ]
     },
