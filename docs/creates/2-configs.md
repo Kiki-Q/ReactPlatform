@@ -1,3 +1,4 @@
+# REACT项目配置
 ## 路径配置
 tsconfig
 ```
@@ -49,3 +50,5 @@ npm i node-sass sass-loader --save-dev
 ```
 npm install antd --save
 ```
+
+

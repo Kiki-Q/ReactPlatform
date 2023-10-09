@@ -14,3 +14,9 @@
 ## [Unexpected any. Specify a different type.eslint](https://blog.csdn.net/a1056244734/article/details/116483428)
 
 ## [Stylelint: Could not find "stylelint-prettier/recommended". Do you need the "configBasedir" or "--config-basedir" option?]()
+
+## ['index.tsx' cannot be compiled under '--isolatedModules' because it is considered a global script file. Add an import, export, or an empty 'export {}' statement to make it a module.](https://cloud.tencent.com/developer/article/1988972)
+
+## [ Dependency cycle detected  import/no-cycle](https://blog.csdn.net/visionke/article/details/89395086)
+
+##

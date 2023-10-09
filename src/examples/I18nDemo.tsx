@@ -10,6 +10,7 @@ import zhHK from 'antd/locale/zh_HK';
 import '../i18n/i18n';
 // 引入 useTranslation
 import { useTranslation } from 'react-i18next';
+import { Outlet } from 'react-router-dom';
 
 export default function Demo() {
   const [locale, setLocal] = useState<Locale>(enUS);
@@ -58,6 +59,7 @@ export default function Demo() {
       {/* custum i18n */}
       <Button onClick={() => change('zhCN')}>切换到中文</Button>
       <div> {t('login')}</div>
+      <Outlet />
     </div>
   );
 }
