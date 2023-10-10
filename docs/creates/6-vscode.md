@@ -5,4 +5,6 @@
 
 
 
-##
+## 调试
+1. debugger
+2. source-map+断点

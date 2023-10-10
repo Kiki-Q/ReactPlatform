@@ -1,12 +1,12 @@
 import React, { lazy } from 'react';
-import type { RouteObject } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
+import { RouteOBJ } from '../types/router';
 import Login from '../views/Login';
 /* 路由懒加载 */
 const Home = lazy(() => import('../examples/I18nDemo'));
 // const Login = lazy(() => import('../views/Login'));
 
-const routes: RouteObject[] = [
+const routes: RouteOBJ[] = [
   {
     path: '/',
     element: <Navigate to="/login" />,
@@ -14,6 +14,7 @@ const routes: RouteObject[] = [
   {
     path: '/home',
     element: <Home />,
+    auth: true,
     children: [
       {
         path: '/home/login',

@@ -1,12 +1,14 @@
-export interface RouteObject {
+import type { RouteObject } from 'react-router-dom';
+
+export type RouteOBJ = RouteObject & {
   caseSensitive?: boolean;
-  children?: RouteObject[];
+  children?: RouteOBJ[];
   element?: React.ReactNode;
   index?: boolean;
   path?: string;
   auth?: boolean;
   name?: string;
-}
+};
 
 // export interface RouteObject2 {
 //   caseSensitive?: boolean;

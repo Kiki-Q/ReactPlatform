@@ -3,12 +3,13 @@ import { useRoutes, NavLink, Outlet } from 'react-router-dom';
 import routes from './routers/index';
 // import RouterDemo from './examples/RouterDemo';
 import './App.css';
+import { RouterGurad } from './utils/routerUtils';
 
 function App() {
-  const activeClassName = ({ isActive = false }) =>
+  const activeClassName = ({ isActive }: { isActive: boolean }) =>
     isActive ? 'list-group-item peiqi' : 'list-group-item';
 
-  const routeView = useRoutes(routes);
+  const routeView = RouterGurad(routes);
   return (
     <div className="app">
       <div className="nav">

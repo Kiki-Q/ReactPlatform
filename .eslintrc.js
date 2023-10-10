@@ -55,5 +55,7 @@ module.exports = {
     // dev
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    'no-unreachable-loop': 'off',
+    'no-plusplus':'off'
   },
 };

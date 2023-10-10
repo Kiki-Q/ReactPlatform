@@ -19,7 +19,10 @@ html body #root .app {
 .nav {
   display: block;
   height: 6rem;
-  background: blueviolet;
+  /* background: blueviolet; */
+}
+.list-group-item .peiqi {
+  color: brown;
 }
 
 .main {
