@@ -57,20 +57,23 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'off',
     'no-unreachable-loop': 'off',
     'no-plusplus': 'off',
-    'no-param-reassign': [
-      'error',
-      {
-        props: true,
-        ignorePropertyModificationsFor: [
-          'e', // for e.returnvalue
-          'ctx', // for Koa routing
-          'req', // for Express requests
-          'request', // for Express requests
-          'res', // for Express responses
-          'response', // for Express responses
-          'state', // for redux state
-        ],
-      },
-    ],
+    'no-param-reassign': 'off',
+    // [
+    //   'error',
+    //   {
+    //     props: true,
+    //     ignorePropertyModificationsFor: [
+    //       'e', // for e.returnvalue
+    //       'ctx', // for Koa routing
+    //       'req', // for Express requests
+    //       'request', // for Express requests
+    //       'res', // for Express responses
+    //       'response', // for Express responses
+    //       'state', // for redux state
+    //       'config',
+    //     ],
+    //   },
+    // ],
+    '@typescript-eslint/no-shadow': 'off',
   },
 };
