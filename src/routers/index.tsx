@@ -4,6 +4,8 @@ import { RouteOBJ } from '../types/router';
 import Login from '../views/Login';
 /* 路由懒加载 */
 const Home = lazy(() => import('../examples/I18nDemo'));
+const ReduxDemo = lazy(() => import('../examples/ReduxDemo'));
+
 // const Login = lazy(() => import('../views/Login'));
 
 const routes: RouteOBJ[] = [
@@ -25,6 +27,10 @@ const routes: RouteOBJ[] = [
   {
     path: '/login',
     element: <Login />,
+  },
+  {
+    path: '/ReduxDemo',
+    element: <ReduxDemo />,
   },
 ];
 
