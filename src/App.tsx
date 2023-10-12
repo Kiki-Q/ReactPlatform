@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import { useRoutes, NavLink, Outlet } from 'react-router-dom';
-import routes from './routers/index';
+import routes from '@/routers/index';
 // import RouterDemo from './examples/RouterDemo';
 import './App.css';
-import { RouterGurad } from './utils/routerUtils';
+import { RouterGurad } from '@/utils/routerUtils';
 
 function App() {
   const activeClassName = ({ isActive }: { isActive: boolean }) =>

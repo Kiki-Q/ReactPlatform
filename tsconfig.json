@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": ".", // 路径配置
     "paths": {
-      "@": ["src"],
-      "@/*": ["src/*"]
+      "@": ["./src"],
+      "@/*": ["./src/*"]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],

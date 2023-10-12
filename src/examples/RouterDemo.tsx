@@ -7,7 +7,7 @@ import {
 import type { MenuProps } from 'antd';
 import { Layout, Menu, theme } from 'antd';
 import { useNavigate, useRoutes } from 'react-router-dom';
-import routes from '../routers/index';
+import routes from '@/routers/index';
 
 const { Header, Content, Sider } = Layout;
 
