@@ -5,7 +5,7 @@ import {
   useDispatch,
   shallowEqual,
 } from 'react-redux';
-import couterReducer from './reducers/counter';
+import couterReducer from './modules/counterSlice';
 
 const store = configureStore({
   reducer: {

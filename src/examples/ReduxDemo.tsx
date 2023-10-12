@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'antd';
 import { useAppSelector, shallowEqualApp, useAppDispatch } from '../store';
-import { incremented, decremented } from '../store/reducers/counter';
+import { incremented, decremented } from '../store/modules/counterSlice';
 
 export default function ReduxDemo() {
   const { count } = useAppSelector(

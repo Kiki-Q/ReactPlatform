@@ -11,7 +11,7 @@ const ReduxDemo = lazy(() => import('../examples/ReduxDemo'));
 const routes: RouteOBJ[] = [
   {
     path: '/',
-    element: <Navigate to="/login" />,
+    element: <Navigate to="/App/login" />,
   },
   {
     path: '/home',

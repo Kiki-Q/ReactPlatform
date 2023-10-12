@@ -13,10 +13,10 @@ function App() {
   return (
     <div className="app">
       <div className="nav">
-        <NavLink className={activeClassName} to="/home">
+        <NavLink className={activeClassName} to="/App/home">
           菜单一
         </NavLink>
-        <NavLink className={activeClassName} to="/login">
+        <NavLink className={activeClassName} to="/App/login">
           菜单二
         </NavLink>
       </div>

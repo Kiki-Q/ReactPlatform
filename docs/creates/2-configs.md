@@ -50,5 +50,13 @@ npm i node-sass sass-loader --save-dev
 ```
 npm install antd --save
 ```
+## 样式
+```
+npm i -D styled-components @types/styled-components
+or
+npm install --save @emotion/react
+or
+npm install --save @emotion/styled
+```
 
 
