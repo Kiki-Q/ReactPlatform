@@ -32,7 +32,8 @@ const {
   setWebpackPublicPath,
   addBundleVisualizer,
   disableEsLint,
-  addWebpackExternals
+  addWebpackExternals,
+  addPostcssPlugins,
   // addBundleVisualizer
 } = require('customize-cra')
 
@@ -216,7 +217,14 @@ module.exports = {
       // 解决antd 的icon图标打包体积大
       // '@ant-design/icons': 'purched-antd-icons'
     }),
-
+    addPostcssPlugins([
+      require('postcss-normalize')({
+        forceImport: true
+      }),
+      require('postcss-preset-env')({
+        stage: 0
+      })
+    ]),
     disableEsLint(),
     appBuildPathFile(),
     disableChunk(),
